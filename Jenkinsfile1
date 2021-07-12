@@ -1,0 +1,9 @@
+node{
+   stages('SCM Checkout'){
+     git  'https://github.com/faiz-git/my-app'
+   }
+   stage('Compile-package'){
+    sh 'mvn pakcage'
+    }
+
+}
