@@ -8,6 +8,8 @@ node{
     sh "${mvnHome}/bin/mvn package"
     }
     STAGE('Email Notifications'){
+    mail bcc: '', body: '''Hii welcome to jenkins email notification
+    thanks Faiz''', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'faizcoolboy727@gmail.com'
     }
 
 }
